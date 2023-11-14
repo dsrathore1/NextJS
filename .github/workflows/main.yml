@@ -16,13 +16,13 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v2
       with:
-        node-version: latest
+        node-version: "latest"
 
     - name: Install dependencies
       run: |
-        echo "Installing all dependencies"
-        npm install
+          echo "Installing all dependencies"
+          npm install
 
     - name: Build Next.js app
       run: |
-        npm run build
+          npm run build
